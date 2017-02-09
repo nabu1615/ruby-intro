@@ -30,7 +30,7 @@ $ <nombre-del-archivo> [master] :> rspec my_solution.rb
 
 ```
 
-Deberias obtener un resumen de pruebas exitosas y no exitosas. The failures. (Asegurate de estar en el directorio indicado)
+Deberias obtener un resumen de pruebas exitosas y no exitosas. Resumen (Asegurate de estar en el directorio indicado)
 
 ## Paso 3: Refactor
 Haz los cambios que consideres necesarios basado en las pruebas. Luego corre las pruebas de nuevo.

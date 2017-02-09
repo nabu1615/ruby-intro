@@ -7,7 +7,7 @@
 ## Resumen
 Crea un una variable `old_string` la cual tenga el valor `"Ruby is cool"`
 
-Usa metodos de la clase `String` para modificar `old_string` de modo que ahora sea igual a `"LOOC SI YBUR"` y asigna este nuevo valor a la variable `new_string`.
+Usa metodos de la clase `String` para crear una nueva variable `new_string` la cual sea igual `old_string` de modo que ahora sea igual a `"LOOC SI YBUR"` y asigna este nuevo valor a la variable .
 
 ## Pasos
 
@@ -28,7 +28,7 @@ $ <nombre-del-archivo> [master] :> rspec my_solution.rb
 
 ```
 
-Deberias obtener un resumen de pruebas exitosas y no exitosas. The failures. (Asegurate de estar en el directorio indicado)
+Deberias obtener un resumen de pruebas exitosas y no exitosas. Resumen (Asegurate de estar en el directorio indicado)
 
 ## Paso 3: Refactor
 Haz los cambios que consideres necesarios basado en las pruebas. Luego corre las pruebas de nuevo.

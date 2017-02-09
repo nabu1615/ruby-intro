@@ -26,20 +26,28 @@ El valor que debe devolver es:
 ## Pasos
 
 ## Paso 0: Pseudocode
-Consider what you need to do to solve the challenge. You can write it down if it will help you, or you can move on to the next Paso.
+Considera cuales son los pasos necesarios para solucionar este reto. Lo mejor es que escribas estos pasos.
 
 ## Paso 1: Solucion Inicial
-Code your solution in the [my_solution.rb](my_solution.rb) file.
+Escribe el codigo inicial en el archivo [my_solution.rb](my_solution.rb)
 
-## Paso 2: Test
-Run the tests to make sure your code passes!
+## Paso 2: Pruebas
+Corre las pruebas para ver que tu codigo funcione
 
-Remember, type `rspec` followed by the spec file name (and make sure you are in the proper directory).
+Escribe `rspec` seguido del nombre del archivo.
+
+```ruby
+
+$ <nombre-del-archivo> [master] :> rspec my_solution.rb
+
+```
+
+Deberias obtener un resumen de pruebas exitosas y no exitosas. Resumen (Asegurate de estar en el directorio indicado)
 
 ## Paso 3: Refactor
-Make any necessary changes based on the tests. Then run the tests again.
+Haz los cambios que consideres necesarios basado en las pruebas. Luego corre las pruebas de nuevo.
 
-Make sure all the tests pass before moving on.
+Asegurate que todas las pruebas pasen antes de seguir adelante.
 
 ## Paso 4: Publica
-When your solution is passing all of the tests, commit and push your changes!
+Cuando tengas la solucion lista, haz un commit y empuja tus cambios!

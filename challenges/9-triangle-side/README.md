@@ -8,7 +8,7 @@ Escribe un metodo `valid_triangle?` el cual reciba como argumento 3 numeros no n
 
 Los argumentos no corresponden a lados especificos. No te preocupes por manejar inputs negativos &mdash; basura que entra basura que sale.
 
-Nota: Cuando ves un metodo que termina en `?` en el nombre, quiere decir que el resultado es un valor `Boolean` .
+Nota: Cuando ves un metodo que termina en `?` en el nombre, quiere decir que el resultado es un valor `Boolean`.
 
 Por ejemplo,
 
@@ -45,7 +45,7 @@ $ <nombre-del-archivo> [master] :> rspec my_solution.rb
 
 ```
 
-Deberias obtener un resumen de pruebas exitosas y no exitosas. The failures. (Asegurate de estar en el directorio indicado)
+Deberias obtener un resumen de pruebas exitosas y no exitosas.  (Asegurate de estar en el directorio indicado)
 
 ## Paso 3: Refactor
 Haz los cambios que consideres necesarios basado en las pruebas. Luego corre las pruebas de nuevo.
