@@ -2,8 +2,9 @@
 
 # Tu solucion abajo:
 
-
-
+old_string = "Ruby is cool"
+new_string = old_string.upcase
+new_string = new_string.reverse 
 
 # Pruebas NO LAS BORRES
 
