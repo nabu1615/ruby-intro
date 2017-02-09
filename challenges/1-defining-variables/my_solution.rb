@@ -2,6 +2,9 @@
 
 # Tu solucion abajo
 
+first_name = 'andres'
+last_name = 'vargas'
+age = 2
 
 # Pruebas NO LAS BORRES
 
