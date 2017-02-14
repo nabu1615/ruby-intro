@@ -1,8 +1,5 @@
 # Simple Substrings
 
-
-
-
 # Tu solucion abajo:
 
 def welcome(str)

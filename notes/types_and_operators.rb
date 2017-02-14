@@ -8,6 +8,7 @@
 # Hashes
 # symbols
 # nil
+# Range
 
 str1 = 'hola'
 str2 = "como estas"
