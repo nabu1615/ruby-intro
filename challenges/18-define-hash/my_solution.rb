@@ -2,7 +2,17 @@
 
 # Tu solucion abajo:
 
+my_info = {
+  first_name: "Andres",
+  last_name: "Vargas",
+  hometown: "Marsella",
+  age: 26
+}
 
+p my_info[:first_name]
+p my_info[:last_name]
+p my_info[:hometown]
+p my_info[:age]
 
 # Pruebas NO LAS BORRES
 
