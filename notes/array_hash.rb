@@ -33,8 +33,7 @@ students = {
     mentor_id: 3
   }
 }
-
-
+make_it[:mentors][0][:id]
 make_it = {
   mentors: [{id: 1, name: 'juan', age: 56}, {id: 0, name: 'german', age: 432}, ],
   students: students
@@ -80,13 +79,6 @@ end
 #   p value[:name]
 # end
 
-make_it.each do |key, value|
-  p value
-end
-
-
-
-
 
 
 products = [
@@ -103,20 +95,6 @@ products.each do |product|
   sum = product[:price] + sum
 end
 p sum
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #### ARRAYS #####
