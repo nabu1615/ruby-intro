@@ -21,6 +21,33 @@ other_survivor_supplies = [ "warm clothes", "rations", "compass", "camp stove",
                             "solar battery", "flashlight"]
 # ----
 
+result = []
+
+zombie_apocalypse_supplies.map do |sup|
+	if !(sup.split.size > 1)
+		result.push(sup.downcase)
+	end
+end
+
+other_survivor_supplies.map do |val|
+	if !(result.include?(val))
+		result.push(val)
+	end
+end
+
+def contain(word, arr)
+	arr.map do |val|
+		if word == val
+			return true
+		end
+	end
+end
+
+result = result.sort
+p contain("rations", result)
+p result 
+
+
 # Practica de Hash
 
 extinct_animals = {
@@ -33,7 +60,38 @@ extinct_animals = {
   "Laysan Crake" => 1923
 }
 
-# 1. Itera sobre el hash extinct_animals, imprimiendo cada vez el la pareja de key/value con un dash (-) entre ellos y un asterisco (*) entre cada elemento (animal extincto).
+extinct_animals.map do |key, value|
+	p "#{key} - #{value}"
+end
+
+extinct_animals.map do |key, value|
+	if (value > 1999)
+		extinct_animals.delete(key);
+	end
+end
+
+p extinct_animals
+
+extinct_animals.map do |key, value|
+	extinct_animals[key] = value - 3
+end
+
+p extinct_animals
+
+p extinct_animals.has_key?("Andean Cat")
+p extinct_animals.has_key?("Dodo")
+p extinct_animals.has_key?("Tasmanian Tiger")
+p extinct_animals.has_key?("Saiga Antelope")
+
+p extinct_animals
+
+newvalue = extinct_animals.select{ |key, value| key == "Passenger Pigeon" }
+
+p newvalue.first
+
+
+
+# 1. Itera sobre el hash extinct_animals, imprimiendo cada vez la pareja de key/value con un dash (-) entre ellos y un asterisco (*) entre cada elemento (animal extincto).
 # ----
 
 # 2. Elimina todos los animales que se extinguieron despues del año 1999, del hash extinct_animals. No uses metodos especiales solo `delete` e iteraciones.
