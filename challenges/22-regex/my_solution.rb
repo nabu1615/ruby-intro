@@ -51,7 +51,6 @@ string = "please confirm your identity: XXX-XX-1422"
 puts hide_all_ssns(string) == string
 
 
-# Ensure all of the Social Security numbers use dashes for delimiters.
 # Asegura que todos los SSN usen guiones (-) como separador de los numeros.
 # Ejemplo: 480.01.4430 y 480014430 se convierten en 480-01-4430.
 def format_ssns(string)
