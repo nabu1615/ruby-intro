@@ -6,7 +6,7 @@
 # Algunos patrones:
 /\d/ #-> Cualquier digito
 /\d{4}/ #-> 4 digitos seguidos
-/\d{4}(\ )?/ # 4 digitos seguidos de un espacio opcional
+/\d{4}(\s)?/ # 4 digitos seguidos de un espacio opcional
 /\d{4}[\ \-]?/ # 4 digitos seguidos de un espacio o guion opcional
 /\d{4}[\s\-]?\d{4}[\s\-]?\d{4}[\s\-]?\d{4}/
 
@@ -14,6 +14,7 @@
 # Syntaxis
 
 # Uno o mas dentro del string
+"Andres" "juan" 'pepito'
 /[ab]/ # Estoy buscando sea a o b dentro del string
 
 # Ninguno de esto en el string
@@ -34,12 +35,24 @@
 # Crea una expresion regular que haga match a
 # Un cuadrado seguido por un triangulo y un circulo opcionales seguido por un cuadrado opcional seguido por 2 triangulos seguido por el final del string
 
-#Respuesta
-/s(tc)?s?t{2}\z/
 
+mentor\s(\w*)\sage\s(\d*)
+
+#Respuestax
+/s(tc)?s?t{2}\z/
+/s(tc)?s?t{2}$/
+
+stcstt
+stt
+sstt
+stct
+ststt
 
 # Usando REGEX en ruby
 
+
+
+'avion'.match(/on/)
 /on/.match('avion') # -> matchdata Object
 /carro/.match('avion') # -> nil
 
@@ -50,6 +63,7 @@ m[1] # -> me da el primer pedazo dentro de parentesis que hizo match
 
 
 /pi/ =~ 'pepito' # -> 2
+'pepito' =~ /pi/
 
 sub
 sub!

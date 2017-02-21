@@ -1,4 +1,4 @@
-
+e
   word_array = %w[hola como estas]
 
   # Returns a new array with the results of running block once for every element in enum.
@@ -129,7 +129,9 @@
   end
 
   # Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.
-  def reduce(accumulator, &block)
+
+  [1,2,3].reduce() {}
+  def reduce(accumulator = nil) yield
     each do |element|
       accumulator = block.call(accumulator, element)
     end
