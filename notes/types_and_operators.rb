@@ -52,32 +52,6 @@ result = num1 > num2
 num = true
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### STRINGS ####
 
 # Un string es una serie de caracteres encerrados dentro de un par de comillas

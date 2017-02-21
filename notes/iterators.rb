@@ -38,5 +38,3 @@ end
 10.times do |i| print "#{i} " end
 
 [1,2,3,4,5,6,7,8,9,10].each {|value| print "#{value} "}
-
-
