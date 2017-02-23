@@ -8,10 +8,6 @@ En esta serie de retos vamos a mirar las clasees mas importantes que vienen con 
 
 Para cada paso escribe la respuesta correspondiente en el archivo que te indique. Luego corre tu el archivo en la terminal para verificar que este funcionando de forma adecuada.
 
-### Paso 1: Pathname
-
-[Docs](https://ruby-doc.org/stdlib-2.4.0/libdoc/pathname/rdoc/Pathname.html)
-
 `Pathname` es una clase que representa el nombre del archivo o su ubicacion en el sistema pero no el archivo como tal. **Nota**: Esta clase funciona sin problemas en sistemas basados en UNIX, en otros sistemas el soporte es experimental de forma que es posible que ocurran problemas en Windows.
 
 Tu reto es que el correr el archivo `filename.rb` este imprima en la consola un string que diga `"Hola mundo desde #{nombre-del-archivo}"` #{nombre-del-archivo} debe venir de usar los metodos de Pathname mas no de quemarla en el string.
