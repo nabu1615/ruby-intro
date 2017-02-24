@@ -24,4 +24,3 @@ def pad(arr, size, opc = nil)
 		twin
 	end
 end
-

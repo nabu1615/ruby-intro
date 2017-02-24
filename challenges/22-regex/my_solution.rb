@@ -3,16 +3,7 @@
 
 # Determina si un string contiene un SSN o no.
 def has_ssn?(string)
-<<<<<<< HEAD
-  # tu codigo va aca
-  if string.match(/\d{3}-\d{2}-\d{4}/)
-    true
-  else
-    false
-  end
-=======
   !!(string =~ (/\d{3}-\d{2}-\d{4}/))
->>>>>>> upstream/master
 end
 
 puts "has_ssn? returns true if it has what looks like a SSN"
@@ -24,13 +15,9 @@ puts has_ssn?("please confirm your identity: XXX-XX-1422") == false
 
 
 # Busca el numero SSN que se encuntra dentro de un string, si hay uno dentro de ella. De lo contrario devuelve nil.
+
 def grab_ssn(string)
-<<<<<<< HEAD
-  # tu codigo va aca
-  return nil if !string.match(/\d{3}-\d{2}-\d{4}/)
-=======
   string[/\d{3}-\d{2}-\d{4}/]
->>>>>>> upstream/master
 end
 
 
@@ -43,17 +30,11 @@ puts grab_ssn("please confirm your identity: XXX-XX-1422") == nil
 
 # Devuelve todos los SSN dentro de un string. Si no hay ninguno devuelve un arreglo Vacio.
 def grab_all_ssns(string)
-<<<<<<< HEAD
-  # tu codigo va aca
-  return [] if !string.scan(/\d{3}-\d{2}-\d{4}/)
-=======
   string.scan(/\d{3}-\d{2}-\d{4}/)
->>>>>>> upstream/master
 end
 
 
 puts "grab_all_ssns returns all SSNs if the string has any SSNs"
-p grab_all_ssns("234-60-1422, 350-80-0744, 013-60-8762")
 puts grab_all_ssns("234-60-1422, 350-80-0744, 013-60-8762") == ["234-60-1422", "350-80-0744", "013-60-8762"]
 
 puts "grab_all_ssns returns an empty Array if it doesn't have any SSNs"
@@ -62,21 +43,19 @@ puts grab_all_ssns("please confirm your identity: XXX-XX-1422") == []
 
 # Ofusca todos los SSN dentro de un string, por ejmplo 123-55-4430 se convierte en  XXX-XX-4430. Deuvuele el string con los SSB ofuscados.
 def hide_all_ssns(string)
-<<<<<<< HEAD
-  # tu codigo va aca
-  match = string.scan(/\d{3}-\d{2}-\d{4}/)
-  match.map do |elem|
-    elem.gsub(/\d{3}-\d{2}/,"XXX-XX")
-  end
-
-=======
   string.gsub(/\d{3}-\d{2}-/, 'XXX-XX-' )
->>>>>>> upstream/master
 end
 
+# def hide_all_ssns(string)
+#   # tu codigo va aca
+#   match = string.scan(/\d{3}-\d{2}-\d{4}/)
+#   match.map do |elem|
+#     elem.sub(/\d{3}-\d{2}/,"XXX-XX")
+#   end
+#   match.join(', ')
+# end
 
 puts "hide_all_ssns obfuscates any SSNs in the string"
-p hide_all_ssns "234-60-1422, 350-80-0744, 013-60-8762"
 puts hide_all_ssns("234-60-1422, 350-80-0744, 013-60-8762") == "XXX-XX-1422, XXX-XX-0744, XXX-XX-8762"
 
 puts "hide_all_ssns does not alter a string without SSNs in it"
@@ -89,6 +68,23 @@ puts hide_all_ssns(string) == string
 def format_ssns(string)
   string.gsub(/(\d{3})\D?(\d{2})\D?(\d{4})/, '\1-\2-\3')
 end
+
+# def format_ssns(string)
+#   if string.match(/(\d{3}[-|.]?\d{2}[-|.]?\d{4})/)
+#     array1 = string.scan(/\d{3}[-|.]?\d{2}[-|.]?\d{4}/)
+#     array2 = array1.map do |x|
+#       if x.match(/(\d{3}\d{2}\d{4})/)
+#         x.insert(3, '-')
+#         x.insert(6, '-')
+#       end
+#       x.gsub!(/[.]/, '-')
+#       x
+#     end
+#     array2.join(", ")
+#   else
+#     string
+#   end
+# end
 
 puts "format_ssns finds and reformat any SSNs in the string"
 puts format_ssns("234601422, 350.80.0744, 013-60-8762") == "234-60-1422, 350-80-0744, 013-60-8762"

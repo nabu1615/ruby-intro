@@ -45,6 +45,7 @@ result = result.uniq
 result = zombie_apocalypse_supplies | other_survivor_supplies
 # ----
 
+<<<<<<< HEAD
 result = []
 
 zombie_apocalypse_supplies.map do |sup|
@@ -72,6 +73,8 @@ p contain("rations", result)
 p result 
 
 
+=======
+>>>>>>> 257d09094e1f9bb05af074f89d678003fddf501b
 # Practica de Hash
 
 extinct_animals = {
@@ -84,6 +87,7 @@ extinct_animals = {
   "Laysan Crake" => 1923
 }
 
+<<<<<<< HEAD
 extinct_animals.map do |key, value|
 	p "#{key} - #{value}"
 end
@@ -116,6 +120,9 @@ p newvalue.first
 
 
 # 1. Itera sobre el hash extinct_animals, imprimiendo cada vez la pareja de key/value con un dash (-) entre ellos y un asterisco (*) entre cada elemento (animal extincto).
+=======
+# 1. Itera sobre el hash extinct_animals, imprimiendo cada vez el la pareja de key/value con un dash (-) entre ellos y un asterisco (*) entre cada elemento (animal extincto).
+>>>>>>> 257d09094e1f9bb05af074f89d678003fddf501b
 # ----
 
 extinct_animals.each do |animal, year|

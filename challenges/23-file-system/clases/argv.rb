@@ -7,4 +7,3 @@ if ARGV.index("--user") && ARGV.index("--greeting")
 else
 	p 'Algo salio mal'
 end
-

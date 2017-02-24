@@ -40,7 +40,11 @@ File.readlines("file_name") #-> Lee todo el archivo linea por linea y devuelve e
 
 
 # Esta forma garantiza que se cierre el archivo
+<<<<<<< HEAD
 File.open("simple_file.txt", "w") { |file| file.write("adding first line of text") }
+=======
+File.open("simple_file.txt", "w") { |file| file.puts("adding first line of text") }
+>>>>>>> 257d09094e1f9bb05af074f89d678003fddf501b
 
 # Alternativamente
 
@@ -74,7 +78,11 @@ File.delete("dummy_file.txt")
 #### ClASES DE FILE #########
 
 File.class
+<<<<<<< HEAD
 File.superclass
+=======
+File.superclass IO
+>>>>>>> 257d09094e1f9bb05af074f89d678003fddf501b
 Dir
 Pathname
 CSV

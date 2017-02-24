@@ -2,13 +2,11 @@
 
 
 # Tu solucion abajo:
-
-
-
 def factorial(number)
-  if number <= 1
-    1
-  else
-    (1..number).inject(number - 1)
+  result = 1
+  while number>=1
+    result = result*number
+    number = number-1
   end
+  return result
 end
