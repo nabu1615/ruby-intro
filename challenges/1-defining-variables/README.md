@@ -4,8 +4,7 @@
 - Definir variables locales
 
 ## Resumen
-Crea las variables llamadas `first_name`, `last_name`, y  `age`.
-
+Crea las variables llamadas `first_name`, `last_name`, y  `age`
 Asigna estas variables a tu informacion personal.
 
 ## Pasos

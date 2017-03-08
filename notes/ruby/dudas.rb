@@ -144,7 +144,7 @@ occer_leagues.each do |league|
     name.each do |key, value|
       p "#{key} y sus jugadores son:"
 
-     value[:players].each do |player_name|
+     vafue[:players].each do |player_name|
         p "#{player_name}"
       end
     end
@@ -158,3 +158,44 @@ soccer_leagues.each do |nombre|
        #{equipo.flatten[1][:players].join(",")}"
   end
 end
+
+
+
+class Cat
+
+  attr_accessor :name, :breed
+
+  def initialize(name, breed)
+    @name = name
+    @breed = breed
+  end
+
+  def speak
+    # Onomatopeya
+    puts 'Miauuu'
+  end
+
+  def name
+    @name
+  end
+
+  def name=(name)
+    @name = name
+  end
+
+  def breed
+    @breed
+  end
+
+end
+
+
+meow = Cat.new('meow', 'persian')
+meow.speak
+
+meow.name
+meow.name = 'pepito'
+
+garfield = Cat.new('garfield', 'scotish')
+garfield.speak
+garfield.name

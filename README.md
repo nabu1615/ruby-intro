@@ -41,5 +41,3 @@ Abrelo en tu editor de texto y empieza a trabajar en los retos en el siguiente o
 ## Mas metodos
 - [Lindo triangulo](./challenges/19-pretty-triangle)
 - [factorial](./challenges/20-factorial)
-
-

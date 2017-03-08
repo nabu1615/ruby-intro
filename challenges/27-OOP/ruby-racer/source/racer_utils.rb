@@ -8,12 +8,13 @@ class Die
   end
 end
 
+module ConsoleHelper
+  def clear_screen!
+    print "\e[2J"
+  end
 
-def clear_screen!
-  print "\e[2J"
-end
 
-
-def move_to_home!
-  print "\e[H"
+  def move_to_home!
+    print "\e[H"
+  end
 end

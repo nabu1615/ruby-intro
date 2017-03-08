@@ -1,3 +1,0 @@
-nombre,edad,apellido
-juan,23,gomez
-fdsj;f

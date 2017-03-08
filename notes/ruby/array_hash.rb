@@ -12,7 +12,6 @@ person = {
 persons = {
   name: {name2: 'juan'}
 }
-
 students = {
   diana: {
     name: 'diana',
@@ -48,7 +47,7 @@ make_it[:students].map do |key, value|
   end
 end
 
-
+mento
 mentors  =  make_it[:mentors];
 students =  make_it[:students];
 
