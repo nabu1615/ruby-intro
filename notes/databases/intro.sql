@@ -1,5 +1,4 @@
--- Creating tables
-
+-- Creating table
 create table directors (
    id serial primary key,
    name varchar(200) unique not null

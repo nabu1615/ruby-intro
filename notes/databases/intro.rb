@@ -20,12 +20,6 @@ require 'faker'
 # Aca creamos la coneccion con la base de datos
 # Este comando crea el archivo de la base de datos en la carpeta donde se encuentre este archivo.
 db_connection = SQLite3::Database.new "#{DATABASE_NAME}.db"
-# the following warning message comes up when you run this script.
-# if you want to avoid it, uncomment this single following line:
-
-# I18n.enforce_available_locales = false #
-
-
 
 #Ahora vamos a usar los metodos que nos provee la gema de sqlite para interactuar con la base de datos.
 
