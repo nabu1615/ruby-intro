@@ -1,4 +1,4 @@
-Paso#Active Record Boilerplate
+# Active Record Boilerplate
 
 ## Resumen
 

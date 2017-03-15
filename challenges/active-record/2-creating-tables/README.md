@@ -2,7 +2,7 @@
 
 ## Resumen
 
-![Database Schema](/schema_design.png)
+![Database Schema](schema_design.png)
 
 *Figura 1.* Esquema para este reto.
 
@@ -80,6 +80,6 @@ Para completar este reto, deberas escribir las migraciones que faltan para crear
 
 Puedes correr las pruebas para ver que las de las tablas `people` y `ratings` fallan.
 
-Escribe las migraciones para crear la tabla `people` con sus columnas. Luego corre la migración. Correr las pruebas de nuevo. Las pruebas para la tabla `people` deberían pasar si la migración quedo bien hecha. Si las pruebas fallan haz un rollback con la tarea `db:rollback`, para poder corregir la migración y correr las pruebas de nuevo. 
+Escribe las migraciones para crear la tabla `people` con sus columnas. Luego corre la migración. Correr las pruebas de nuevo. Las pruebas para la tabla `people` deberían pasar si la migración quedo bien hecha. Si las pruebas fallan haz un rollback con la tarea `db:rollback`, para poder corregir la migración y correr las pruebas de nuevo.
 
 Repite el proceso para la tabla `ratings`.
