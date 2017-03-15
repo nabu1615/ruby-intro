@@ -4,3 +4,5 @@ create table dogs(
 	age integer,
 	weight integer
 );
+
+
