@@ -1,6 +1,6 @@
 class Dog < ActiveRecord::Base
   include USGeography
-
+  has_many :judges, {class_name: "Person"}
   has_many :ratings
   belongs_to :owner, { class_name: "Person" }
 
